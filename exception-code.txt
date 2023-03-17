@@ -1,0 +1,14 @@
+try{
+            List<String> records = new ArrayList<>();
+            Scanner sc = new Scanner(new File("src/main/resources/Subgroup_list.csv"));
+            sc.useDelimiter("\n");
+
+            while (sc.hasNext())  //returns a boolean value
+            {
+                records.add(sc.next());
+            }
+            //  records.forEach(System.out::println);*/
+        }
+        catch (Exception e){
+            System.out.println(e);
+        }
